@@ -395,7 +395,7 @@ async function connecter() {
       );
     }
     device = await navigator.bluetooth.requestDevice({
-      filters: [{ name: 'Aeroglisseur' }],
+      acceptAllDevices: true,
       optionalServices: [SERVICE_UUID]
     });
 
